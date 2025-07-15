@@ -1,0 +1,9 @@
+on:
+  pull_request_target: {}
+jobs:
+  check_pr:
+    runs-on: ubuntu-late
+    steps:
+      - name: foo
+        shell: bash
+        run: ls -halF
