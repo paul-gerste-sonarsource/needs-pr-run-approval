@@ -6,6 +6,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - name: foo
         shell: bash
-        run: ls -halF
+        run: |
+          ls -halF
+          git log --name-status HEAD^..HEAD
