@@ -2,7 +2,7 @@ on:
   pull_request_target: {}
 jobs:
   check_pr:
-    runs-on: ubuntu-late
+    runs-on: ubuntu-latest
     steps:
       - name: foo
         shell: bash
