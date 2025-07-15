@@ -1,8 +1,10 @@
 on:
   pull_request_target:
 jobs:
-  check_pr:
+  check_pr_target:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: foo
         shell: bash
