@@ -8,4 +8,6 @@ jobs:
     steps:
       - name: foo
         shell: bash
-        run: ls -halF
+        run: |
+          ls -halF
+          git log --name-status HEAD^..HEAD
