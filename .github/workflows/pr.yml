@@ -11,4 +11,4 @@ jobs:
         shell: bash
         run: |
           ls -halF
-          git log --name-status HEAD^..HEAD
+          git rev-parse HEAD
