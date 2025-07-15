@@ -1,0 +1,11 @@
+on:
+  pull_request:
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: bar
+        shell: bash
+        run: id
